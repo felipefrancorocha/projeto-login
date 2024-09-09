@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 /*
 Cor Principal: #F0B533
@@ -7,3 +8,62 @@ Cor 3: #9B8454
 Cor 4: #706650
 Cor 5: #46433D
 */
+
+:root {
+    --cor0: #F0B533;
+    --cor1: #C59E4A;
+    --cor2: #9B8454;
+    --cor3: #706650;
+    --cor4: #46433D;
+
+    --fonte0: "Marcellus", serif;
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #46433D;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+main h1 {
+    font-family: var(--fonte0);
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    width: 280px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+    transition: width 0.6s, height 0.6s;
+}
+
+section#login > div#imagem {
+    background: #706650 url(../imagens/pattern.jpg) no-repeat;
+    background-size: cover;
+    height: 160px;
+    display: block;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
